@@ -1,0 +1,47 @@
+@mixin header-logo($jc, $wd) {
+  display: flex;
+  justify-content: $jc;
+  align-items: center;
+  width: $wd;
+}
+
+@mixin logo-position($wd, $hg) {
+  position: absolute;
+  cursor: pointer;
+  width: $wd;
+  height: $hg;
+}
+
+@mixin font-type($color, $txt-ag) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+
+  color: $color;
+  text-align: $txt-ag;
+}
+
+@mixin list-type($wd) {
+  margin-left: 36px;
+  width: $wd;
+}
+
+// BANNER
+
+@mixin banner1($wd, $hg, $fz, $lh, $color) {
+  width: $wd;
+  height: $hg;
+  font-size: $fz;
+  line-height: $lh;
+  color: $color;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+@mixin ellipses ($left, $top) {
+  position: absolute;
+  left: $left;
+  top: $top;
+}
